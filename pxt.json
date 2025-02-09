@@ -1,0 +1,47 @@
+{
+    "name": "Fun with Bluetooth ",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "microphone": "*",
+        "microbit-pxt-blehid - Copy": "github:bsiever/microbit-pxt-blehid#v0.1.0",
+        "Environment-and-Science-IoT": "github:tinkertanker/pxt-iot-environment-kit#v5.4.0",
+        "Grove": "github:seeed-studio/pxt-grove#v0.7.0",
+        "pxt-sonar": "github:microsoft/pxt-sonar#v0.0.6",
+        "audio-recording": "*",
+        "maqueen": "github:dfrobot/pxt-maqueen#v1.7.15",
+        "minode": "github:minodekit/pxt-minode#v1.1.0",
+        "datalogger": "*",
+        "servo": "*",
+        "bluetooth": "*",
+        "microturtle": "github:microsoft/pxt-microturtle#v0.0.10",
+        "smarthome-kit": "github:tinkertanker/pxt-smarthome#v2.2.2"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "7.0.57",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
+}
